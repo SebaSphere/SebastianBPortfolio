@@ -1,0 +1,136 @@
+body
+  margin: 0
+  padding: 0
+
+$triangle-height: 25rem
+
+.holder
+  position: relative
+
+.square1
+  position: relative
+  width: 100%
+  height: 5rem
+  background: #005b96
+
+.triangle1
+  position: absolute
+  width: 100%
+  height: 20rem
+  background: #005b96 // darker blue
+  /* The points are: centered top, left bottom, right bottom */
+  clip-path: polygon(0% 0, 0 100%, 100% 0%)
+
+.triangle2
+  position: relative
+  width: 100%
+  height: $triangle-height
+  background: #b3cde0 // lighter blue
+  /* The points are: centered top, left bottom, right bottom */
+  clip-path: polygon(100% 0, 0 100%, 100% 100%)
+
+.square2
+  position: relative
+  width: 100%
+  height: 15rem
+  background: #b3cde0
+
+
+
+
+.who-am-i
+  position: relative
+  background: #03396c
+  bottom: 30rem
+  left: 40%
+  text-align: center
+  width: 30rem
+  height: 17rem
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  p
+    position: center
+    bottom:
+    font-size: 40px
+
+
+@media (min-width: 0px)
+  .who-am-i
+    position: center
+    background: #03396c
+    bottom: 36rem
+    left: 5%
+    text-align: center
+    width: 89%
+    height: 10rem
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  .who-am-i #name
+    font-family: 'Noto Sans JP', sans-serif
+    font-size: 20px
+    position: relative
+  .who-am-i #username
+    font-family: 'Roboto', sans-serif
+    position: relative
+    font-size: 18px
+
+@media (min-width: 460px)
+  .who-am-i
+    position: relative
+    bottom: 30rem
+    left: 20%
+    text-align: center
+    font-size: 40px
+    width: 22rem
+    height: 17rem
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  .who-am-i #name
+    color: white
+    position: absolute
+    left: 2rem
+    font-size: 40px
+
+
+  .who-am-i #username
+    color: white
+    position: absolute
+    bottom: 7rem
+    left: 10rem
+    font-size: 22px
+
+
+@media (min-width: 850px)
+  .who-am-i
+    position: relative
+    bottom: 30rem
+    left: 40%
+    text-align: center
+    width: 30rem
+    height: 17rem
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  .who-am-i #name
+    position: absolute
+    left: 6rem
+  .who-am-i #username
+    position: absolute
+    bottom: 7rem
+    left: 16rem
+
+@media (min-width: 1500px)
+  .who-am-i
+    position: relative
+    bottom: 30rem
+    right: 50%
+    left: 50%
+    text-align: center
+    width: 45rem
+    height: 17rem
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  .who-am-i #name
+    position: absolute
+    left: 12rem
+  .who-am-i #username
+    position: absolute
+    bottom: 7rem
+    left: 22rem
+
+.navbar
+  position: relative
