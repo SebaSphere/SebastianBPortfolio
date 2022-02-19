@@ -10,4 +10,11 @@ router.get('/', function(req, res, next) {
 
 });
 
+router.get('/nsfw', function(req, res, next) {
+  res.render('fumo', {
+    title: '!'
+  });
+
+});
+
 module.exports = router;
