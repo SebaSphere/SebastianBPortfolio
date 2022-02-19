@@ -7,9 +7,19 @@ class Scene {
 
     // gets scene ready
     prepare() {
-        const canvas = document.getElementById("canvas")
-        canvas.element.style.display = "block"
+        this.drawCenterFumo()
+        document.getElementById("audio").loop = true;
+        this.element.addEventListener("resize", this.onBodyResize())
+
     }
 
+    drawCenterFumo() {
+        const fumo = document.getElementById("fumo")
+        fumo.style.display = "block"
+    }
+
+    onBodyResize() {
+
+    }
 
 }

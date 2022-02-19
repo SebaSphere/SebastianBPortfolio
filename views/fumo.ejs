@@ -4,9 +4,11 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/fumo.css' />
     <script src="/javascripts/fumo.js"></script>
+    <script src="/javascripts/Scene.js"></script>
 </head>
 <body>
-    <audio controls="" preload="" loop="loop" id="audio"><source src="/sounds/funky.mp3" type="audio/mp3"></audio>
     <button onclick="buttonClicked()" onmouseover="" id="clicked-button">Click me?</button>
-    <canvas width="595" height="524" style="width: 1190px; height: 1048px; display: none;" id="canvas"></canvas></body>
+    <img src="/images/touhou-fumo.gif" id="fumo" style="display: none" class="cue-in">
+    <audio controls loop id="audio"><source src="/sounds/funky.mp3" type="audio/mp3"></audio>
+</body>
 </html>
