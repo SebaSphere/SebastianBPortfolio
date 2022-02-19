@@ -13,4 +13,4 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-CMD [ "node", "/bin/www.js" ]
+CMD [ "node", "bin/www" ]
