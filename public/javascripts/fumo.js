@@ -10,6 +10,7 @@ function buttonClicked() {
 
 function playAudio() {
     const audio = new Audio("/sounds/funky.mp3");
+    audio.loop = true
     audio.play();
 }
 
