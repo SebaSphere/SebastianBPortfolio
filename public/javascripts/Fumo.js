@@ -1,7 +1,3 @@
-window.addEventListener("resize", resize => {
-
-})
-
 function buttonClicked() {
     playAudio()
     removeButton()

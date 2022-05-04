@@ -3,12 +3,14 @@
 <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/fumo.css' />
-    <script src="/javascripts/fumo.js"></script>
+    <script src="/javascripts/Fumo.js"></script>
     <script src="/javascripts/Scene.js"></script>
 </head>
 <body>
-    <button onclick="buttonClicked()" onmouseover="" id="clicked-button">Click me?</button>
-    <img src="/images/touhou-fumo.gif" id="fumo" style="display: none" class="cue-in">
+    <div id="scene">
+        <img src="/images/touhou-fumo.gif" id="fumo" style="display: none" class="cue-in">
+        <button onclick="buttonClicked()" onmouseover="" id="clicked-button">Click me?</button>
+    </div>
     <audio loop id="audio"><source src="/sounds/funky.mp3" type="audio/mp3"></audio>
 </body>
 </html>

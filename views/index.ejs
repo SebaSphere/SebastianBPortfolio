@@ -3,26 +3,117 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Roboto&display=swap');
     </style>
   </head>
   <body>
-    <div class="view">
-      <!--  this is the navbar triangle thing  -->
-      <div class="holder">
-        <div class="square1"></div>
-        <div class="triangle1"></div>
-        <div class="triangle2"></div>
-        <div class="square2"></div>
-        <div class="navbar">
-          <!-- About me,  -->
-        </div>
-        <div class="who-am-i">
-          <p id="name">I'm Sebastian!</p>
-          <p id="username"><i>@SebaSphere</i></p>
+  <section class="what-am-i">
+    <div class="blur"></div>
+    <div id="what-am-i-slides" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/fumo_close.jpg" class="d-block w-100" alt="fumo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fumo chilling</h5>
+            <p>Cirno being funky by the poolside.</p>
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <div class="what-am-i-info">
+      <h1>I am Sebastian</h1>
+      <p>@SebaSphere</p>
+    </div>
+<!--      <ul>-->
+<!--        <li>Developer</li>-->
+<!--        <li>System Administrator</li>-->
+<!--        <li>Modder</li>-->
+<!--        <li>Tech Enthusiast</li>-->
+<!--        <li id="who-am-i-box">-->
+<!--          <div id="who-am-i">-->
+<!--            <p class="name">I'm Sebastian!</p>-->
+<!--            <p class="username"><i>@SebaSphere</i></p>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+    </section>
+    <section class="container" id="sebastian">
+      <div class="row info">
+        <div class="col-sm">
+          <h2 id="about-me">About me</h2>
+          <p id="infographic">
+            Hi, I'm Sebastian but I go by Seba. I've had a passion for technology growing up and I've come to learn a few things by myself.
+            From software development to Linux system admin, I've found there's always something new to learn and immerse yourself in.
+            I'm currently working on a Computer Science degree at Miami Dade College.
+            <br>
+            <br>
+            I enjoy modding PC games, playing virtual reality games like Beatsaber, and I've earned the Eagle rank in Boyscouts.
+            I've taken a cybersecurity certificate course through the University of Miami, which familiarized me with
+            various best security practices.
+            <br>
+            <br>
+            <!-- replace with actual link-->
+            Feel free to familiarize yourself with some of the <a href="https://sebastianb.dev/nsfw">projects</a> I've worked on and don't hesitate to <a href="https://sebastianb.dev/nsfw">contact me</a> for my full resume.
+          </p>
+        </div>
+        <div class="col-sm">
+          <table class="table" id="about-me-table">
+            <tr>
+              <th>Age</th>
+              <th class="tableInfo"><%= age %></th>
+            </tr>
+            <tr>
+              <th>Pronouns</th>
+              <th class="tableInfo">he/him/they</th>
+            </tr>
+            <tr>
+              <th>Location</th>
+              <th class="tableInfo">Miami, Florida</th>
+            </tr>
+            <tr>
+              <th>Color</th>
+              <th class="tableInfo">Blue</th>
+            </tr>
+            <tr>
+              <th>Number</th>
+              <th class="tableInfo">1</th>
+            </tr>
+            <tr>
+              <th>Fumo</th>
+              <th><img src="/images/touhou-fumo.gif" style="width: 100px"></th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm">
+          <img src="/images/placeholder.png" class="profilePicture">
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="container" id="certificates">
+      <div class="row">
+        <div class="col-sm certificates">
+          <p>A+</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
