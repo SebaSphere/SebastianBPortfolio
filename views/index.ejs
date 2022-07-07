@@ -3,55 +3,18 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-vader.css" type="text/css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Roboto&display=swap');
     </style>
   </head>
   <body>
-  <section class="what-am-i">
-    <div class="blur"></div>
-    <div id="what-am-i-slides" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <section class="what-am-i">
+      <div class="what-am-i-info">
+        <h1>I am Sebastian</h1>
+        <p>@SebaSphere</p>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/fumo_close.jpg" class="d-block w-100" alt="fumo">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Fumo chilling</h5>
-            <p>Cirno being funky by the poolside.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="what-am-i-info">
-      <h1>I am Sebastian</h1>
-      <p>@SebaSphere</p>
-    </div>
-<!--      <ul>-->
-<!--        <li>Developer</li>-->
-<!--        <li>System Administrator</li>-->
-<!--        <li>Modder</li>-->
-<!--        <li>Tech Enthusiast</li>-->
-<!--        <li id="who-am-i-box">-->
-<!--          <div id="who-am-i">-->
-<!--            <p class="name">I'm Sebastian!</p>-->
-<!--            <p class="username"><i>@SebaSphere</i></p>-->
-<!--          </div>-->
-<!--        </li>-->
-<!--      </ul>-->
+      <img src="/images/face_with_blahaj.jpeg" alt="me holding a ikea shark">
     </section>
     <section class="container" id="sebastian">
       <div class="row info">
@@ -63,16 +26,17 @@
             I'm currently working on a Computer Science degree at Miami Dade College.
             <br>
             <br>
-            I enjoy modding PC games, playing virtual reality games like Beatsaber, and I've earned the Eagle rank in Boyscouts.
+            I enjoy modding games such as Minecraft, playing virtual reality games like Beatsaber, and I've earned the Eagle rank in Boyscouts.
             I've taken a cybersecurity certificate course through the University of Miami, which familiarized me with
             various best security practices.
             <br>
             <br>
             <!-- replace with actual link-->
-            Feel free to familiarize yourself with some of the <a href="https://sebastianb.dev/nsfw">projects</a> I've worked on and don't hesitate to <a href="https://sebastianb.dev/nsfw">contact me</a> for my full resume.
+            Feel free to familiarize yourself with some of the <a href="https://sebastianb.dev/projects">projects</a> I've worked on and don't hesitate to <a href="#contact">contact me</a> for my full resume.
           </p>
         </div>
-        <div class="col-sm">
+        <br>
+        <div>
           <table class="table" id="about-me-table">
             <tr>
               <th>Age</th>
@@ -96,24 +60,73 @@
             </tr>
             <tr>
               <th>Fumo</th>
-              <th><img src="/images/touhou-fumo.gif" style="width: 100px"></th>
+              <th>
+                <a href="https://sebastianb.dev/nsfw" target="_blank">
+                  <img src="/images/touhou-fumo.gif" style="width: 100px">
+                </a>
+              </th>
             </tr>
           </table>
         </div>
-        <div class="col-sm">
-          <img src="/images/placeholder.png" class="profilePicture">
-        </div>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <section class="container" id="certificates">
-      <div class="row">
-        <div class="col-sm certificates">
-          <p>A+</p>
-        </div>
-      </div>
+    <section>
     </section>
+    <section>
+      <h2>Projects</h2>
+      <ol>
+        <ul>
+          <h3>Home lab | Started December 2020</h3>
+          <img src="/images/homelab_proxmox.png">
+          <p>Computer I built with server-grade hardware that I use to host websites, game servers, and generally test whatever I'd like.<br><br>
+          I'm currently hosting a Proxmox server with each VM networked behind a virtualized instance of pfsense.<br><br>
+            The computer is backed by a UPS, which helps fight the unreliability of Florida power during hurricane season.</p>
+        </ul>
+        <ul>
+          <h3>Shockbyte Easter Server | March - April 2022</h3>
+          <img src="/images/ShockbyteEaster.png">
+          <p><b>Server Management leader</b> for the Shockbyte yearly Easter Minecraft server. I helped with tasks such as configuration of server files, plugin development providing unique functionality, and general server maintenance.<br><br></p>
+          <p>The Easter server was enjoyed by hundreds of individuals with total hourly playtime between all players going over two thousand hours.</p>
+        </ul>
+        <ul>
+          <h3>Shockbyte Starbound hosting | April - May 2022</h3>
+          <img src="/images/starbound.png">
+          <p><b>Knowledgebase leader</b> for the Shockbyte Starbound game release. I worked closely with each of our Knowledgebase writers and helped ensure Shockbyte has the objectively best and most extensive documentation for hosting your Starbound server.</p><br><br>
+          <p>I made a fundamental change to the way Knowledgebase drafts are written that helped saved time and money by researching what's needed for each article and providing in a document for each of my colleagues. You can find my teams work <a href="https://shockbyte.com/billing/knowledgebase/40/Starbound">here</a>.</p>
+        </ul>
+        <ul>
+          <h3>Shockbyte SCP:SL hosting | May - June 2022</h3>
+          <img src="/images/scp_sl.png">
+          <p><b>Project leader</b> for the Shockbyte SCP: Secret Laboratory game release. I was in charge of making sure the game release went smoothly and worked with QA, development, marketing, support team, and our Knowledgebase writers to deliver a high quality servers and support for customers.</p><br><br>
+          <p>I helped keep on top of everyone to make sure I had a overview of what was happening. Currently, you can find the purchase page at <a href="https://shockbyte.com/games/scp-secret-laboratory-server-hosting/">shockbyte.com/games/scpsl</a></p>
+        </ul>
+        <ul>
+          <h3>Blockbench Fabric Entity code generator | June 2022</h3>
+          <img src="/images/blockbench.png">
+          <p><b>Open-source tool</b> used by dozens of developers I've updated to the latest version of Minecraft as the way entities were modeled and rendered was refactored. No one had updated this tool relied on by developers to automatically generate Blockbench models into code in over a year since it was introduced, which, I decided that needed to change.</p><br><br>
+          <p>Initially made by <a href="https://github.com/fadookie">Eliot Lash</a>, I updated the tool to be compatible with Minecraft 1.17 changes, which you can find my code <a href="https://github.com/JannisX11/blockbench-plugins/blob/edaf4d66ac61241193e774bb85a2cf1f176a78d1/plugins/modded_entity_fabric.js#L131">here</a>.</p>
+        </ul>
+        <p>
+          <h3>Honourable mentions?</h3>
+          <ol>
+            <p>Shockbyte Minecraft Live 2021 marketing meme maker - October 2021</p>
+            <p>Minecraft mod commission for the "TazerCraft" YouTuber viewed by millions - September, October 2021</p>
+            <p>Shockbyte Satisfactory Hosting Knowledgebase writer - November 2021</p>
+            <p>Shockbyte Project Zomboid Hosting Knowledgebase writer - January 2022</p>
+            <p>Shockbyte Unturned Hosting Knowledgebase writer - March 2022</p>
+          </ol>
+        </ul>
+      </ol>
+
+    </section>
+  <section id="contact">
+    <h4>Hit me up?</h4>
+    <ol>
+      <ul>Mail me at <a href="mailto:me@sebastianb.dev">me@sebastianb.dev</a></ul>
+      <ul>Message me on Discord at <b>SebaSphere#0001</b></ul>
+      <ul>Check me out on Linkedin at <a href="https://www.linkedin.com/in/sebasphere/">linkedin.com/in/sebasphere</a></ul>
+      <ul>Stalk me on my GitHub at <a href="https://github.com/SebaSphere">github.com/SebaSphere</a></ul>
+    </ol>
+  </section>
   </body>
 </html>
