@@ -12,6 +12,6 @@ COPY package*.json ./
 RUN npm install
 # Bundle app source
 COPY . .
-
+# Port used under /bin/www, forward to whatever port you want with nginx
 EXPOSE 3000
 CMD [ "node", "bin/www" ]

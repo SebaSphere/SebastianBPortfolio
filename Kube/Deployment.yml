@@ -1,0 +1,23 @@
+# kubectl port-forward container-name 45231:3000
+# above command is used to forward the internal port 3000 to 45231 on localhost
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-portfolio-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      terminationGracePeriodSeconds: 1
+      containers:
+        - name: sebastianbportfolio
+          image: ghcr.io/sebasphere/sebastianbportfolio:master
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
