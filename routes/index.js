@@ -18,13 +18,6 @@ router.get('/nsfw', function(req, res, next) {
 
 });
 
-// router.get('/modding', function(req, res, next) {
-//   res.render('modding', {
-//     title: "Seba Minecraft Modding"
-//   });
-//
-// });
-
 module.exports = router;
 
 // gets my current age | https://www.javatpoint.com/calculate-age-using-javascript
